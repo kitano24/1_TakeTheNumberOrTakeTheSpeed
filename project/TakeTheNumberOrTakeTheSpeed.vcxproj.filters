@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="System\Light.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\WinMain.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameMain.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Goal.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Map.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Score.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Camera\CameraPlayer.cpp">
+      <Filter>Game\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Enemy\Enemy.cpp">
+      <Filter>Game\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Enemy\EnemyManager.cpp">
+      <Filter>Game\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Player\Player.cpp">
+      <Filter>Game\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="System\ImGui\imgui.cpp">
+      <Filter>System\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="System\ImGui\imgui_demo.cpp">
+      <Filter>System\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="System\ImGui\imgui_draw.cpp">
+      <Filter>System\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="System\ImGui\imgui_widgets.cpp">
+      <Filter>System\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="System\ImGui\imgui_impl_dx11.cpp">
+      <Filter>System\ImGui\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="System\ImGui\imgui_impl_win32.cpp">
+      <Filter>System\ImGui\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="System\Input\KeyInput.cpp">
+      <Filter>System\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="System\Input\PadInput.cpp">
+      <Filter>System\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="System\Scene\SceneClear.cpp">
+      <Filter>System\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="System\Scene\SceneRanking.cpp">
+      <Filter>System\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="System\Scene\SceneTitle.cpp">
+      <Filter>System\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="System\Base\Base.cpp">
+      <Filter>System\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="System\Base\Camera.cpp">
+      <Filter>System\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="System\Base\EnemyBase.cpp">
+      <Filter>System\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\SlashingEffect.cpp">
+      <Filter>Game\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="System\Base\PlayerBase.cpp">
+      <Filter>System\Base</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="System\Color.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Light.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="System\WinMain.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameMain.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Goal.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Map.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Score.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Camera\CameraPlayer.h">
+      <Filter>Game\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Enemy\Enemy.h">
+      <Filter>Game\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Enemy\EnemyManager.h">
+      <Filter>Game\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Player\Player.h">
+      <Filter>Game\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\precompile.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="System\ImGui\imconfig.h">
+      <Filter>System\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="System\ImGui\imgui.h">
+      <Filter>System\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="System\ImGui\imgui_internal.h">
+      <Filter>System\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="System\ImGui\imstb_rectpack.h">
+      <Filter>System\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="System\ImGui\imstb_textedit.h">
+      <Filter>System\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="System\ImGui\imstb_truetype.h">
+      <Filter>System\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="System\ImGui\imgui_impl_dx11.h">
+      <Filter>System\ImGui\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="System\ImGui\imgui_impl_win32.h">
+      <Filter>System\ImGui\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Input\KeyInput.h">
+      <Filter>System\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Input\PadInput.h">
+      <Filter>System\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Scene\SceneTitle.h">
+      <Filter>System\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Scene\SceneClear.h">
+      <Filter>System\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Scene\SceneRanking.h">
+      <Filter>System\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Base\Base.h">
+      <Filter>System\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Base\Camera.h">
+      <Filter>System\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Base\EnemyBase.h">
+      <Filter>System\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\SlashingEffect.h">
+      <Filter>Game\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Base\PlayerBase.h">
+      <Filter>System\Base</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Game">
+      <UniqueIdentifier>{c84522b7-34fc-4f62-90b3-c2fc95ac51b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{9cb80c92-cc55-4ea9-89ed-b696d7c0a187}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Camera">
+      <UniqueIdentifier>{13af23f4-1cf6-4f1e-a576-16630ff9140b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Enemy">
+      <UniqueIdentifier>{1006d305-0af2-4844-872a-5a9585582d07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Player">
+      <UniqueIdentifier>{010e30e7-5380-45c9-b69f-deba953aa9cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\ImGui">
+      <UniqueIdentifier>{c931ad83-dfcd-45b8-883e-10fed490e4d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\ImGui\DirectX">
+      <UniqueIdentifier>{9cb1dd66-4f82-40d6-8831-5617758e2306}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Input">
+      <UniqueIdentifier>{5a0ccfa7-4706-4c95-a1e2-b324be6f31b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Scene">
+      <UniqueIdentifier>{f05c749b-2b28-446a-bd81-efdc11579f55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Base">
+      <UniqueIdentifier>{d7628f20-b739-4e72-9009-cd7be9ec6943}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Effect">
+      <UniqueIdentifier>{b4c4601b-1a94-4239-abd8-962916a61275}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
