@@ -208,14 +208,6 @@ void Player::Move()
 		isAction = true;
 		moveTo = VNorm(moveTo);
 		direction = moveTo;
-		/*! @details　DXライブラリの関数 VNorm() にバグがあったため、ノーマライズを 
-		 直書きするか、変数 moveTo を関数 Move で初期化することで解決
-		 */
-		//! ノーマライズ直書き
-		//float l = sqrtf(moveTo.x * moveTo.x + moveTo.y * moveTo.y + moveTo.z * moveTo.z);
-		//moveTo.x /= l;
-		//moveTo.y /= l;
-		//moveTo.z /= l;
 	}
 
 	pos = VAdd(pos, moveTo);
@@ -326,13 +318,6 @@ void Player::WorldMat()
 {
 	//! 単位行列を作成する
 	CreateIdentityMatrix(&matWorld);
-
-	// ワールド行列の生成
-	// 行列の内部は下記の通り
-	// |  axisX.x  axisX.y  axisX.z  0.0f |
-	// |  axisY.x  axisY.y  axisY.z  0.0f |
-	// |  axisZ.x  axisZ.y  axisZ.z  0.0f |
-	// |  x        y        z        1.0f |
 
 	//! Y軸
 	VECTOR	axisY = VGet(angleX, playerSize, angleZ);
