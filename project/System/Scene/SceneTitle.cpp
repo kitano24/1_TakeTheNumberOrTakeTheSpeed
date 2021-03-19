@@ -8,7 +8,7 @@
 //---------------------------------------------------------------------------
 SceneTitle::SceneTitle()
 {
-	fontSize = CreateFontToHandle(NULL, 100, 3, DX_FONTTYPE_NORMAL);;
+	fontSize = CreateFontToHandle(NULL, 80, 3, DX_FONTTYPE_NORMAL);;
 	Initialize();
 }
 
@@ -26,9 +26,9 @@ void SceneTitle::Initialize()
 {
 	titletScreen = LoadGraph("data/scene/titletScreen.png");
 	x1 = 540;
-	y1 = 580;
+	y1 = 570;
 	x2 = 1380;
-	y2 = 700;
+	y2 = 690;
 	isMainGame = false;
 	isRanking = false;
 }
@@ -41,7 +41,7 @@ void SceneTitle::Update()
 	Move();
 
 	//! ゲームスタートの位置
-	if (y1 == 580 && IsKeyOn(KEY_INPUT_SPACE) || y1 == 580 && IsPadOn(PAD_B)) {
+	if (y1 == 570 && IsKeyOn(KEY_INPUT_SPACE) || y1 == 580 && IsPadOn(PAD_B)) {
 		//! 決定のSE
 		PlaySoundFile("data/sound/decision.wav", DX_PLAYTYPE_BACK);
 		//! @retval true ゲームスタート
@@ -52,7 +52,7 @@ void SceneTitle::Update()
 	}
 
 	//! ランキングの位置
-	if (y1 == 780 && IsKeyOn(KEY_INPUT_SPACE) || y1 == 780 && IsPadOn(PAD_B)) {
+	if (y1 == 770 && IsKeyOn(KEY_INPUT_SPACE) || y1 == 780 && IsPadOn(PAD_B)) {
 		//! 決定のSE
 		PlaySoundFile("data/sound/decision.wav", DX_PLAYTYPE_BACK);
 		//! @retval true ランキングシーンへ移動
@@ -69,17 +69,17 @@ void SceneTitle::Update()
 void SceneTitle::Move()
 {
 	//! 印がランキングの位置へ移動
-	if (y1 == 580 && IsKeyOn(KEY_INPUT_DOWN) || IsPadOn(PAD_DOWN)) {
-		y1 = 780;
-		y2 = 900;
+	if (y1 == 570 && IsKeyOn(KEY_INPUT_DOWN) || IsPadOn(PAD_DOWN)) {
+		y1 = 770;
+		y2 = 890;
 		//! 選択しているときのSE
 		PlaySoundFile("data/sound/option.wav", DX_PLAYTYPE_BACK);
 	}
 
 	//! 印がゲームスタートの位置へ移動
-	if (y1 == 780 && IsKeyOn(KEY_INPUT_UP) || IsPadOn(PAD_UP)) {
-		y1 = 580;
-		y2 = 700;
+	if (y1 == 770 && IsKeyOn(KEY_INPUT_UP) || IsPadOn(PAD_UP)) {
+		y1 = 570;
+		y2 = 690;
 		//! 選択しているときのSE
 		PlaySoundFile("data/sound/option.wav", DX_PLAYTYPE_BACK);
 	}
@@ -97,20 +97,20 @@ void SceneTitle::Draw()
 	SetDrawBlendMode(DX_BLENDMODE_NOBLEND, MAX_OPACITY);
 
 	//! ゲームスタートを選択中
-	if (y1 == 580) {
-		DrawStringToHandle(710, 590, "GAME START", YELLOW, fontSize);
+	if (y1 == 570) {
+		DrawStringToHandle(750, 590, "GAME START", YELLOW, fontSize);
 	}
 	else {
 		//! 選択されていなければ文字を黒くする
-		DrawStringToHandle(710, 590, "GAME START", BLACK, fontSize);
+		DrawStringToHandle(750, 590, "GAME START", BLACK, fontSize);
 	}
 
 	//! ランキングを選択中
-	if (y1 == 780) {
-		DrawStringToHandle(780, 790, "RANKING", YELLOW, fontSize);
+	if (y1 == 770) {
+		DrawStringToHandle(820, 790, "RANKING", YELLOW, fontSize);
 	}
 	else {
 		//! 選択されていなければ文字を黒くする
-		DrawStringToHandle(780, 790, "RANKING", BLACK, fontSize);
+		DrawStringToHandle(820, 790, "RANKING", BLACK, fontSize);
 	}
 }
