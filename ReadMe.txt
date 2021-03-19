@@ -53,7 +53,7 @@ OCA 大阪デザイン＆IT専門学校
 
 【操作方法】
 　・キーボードとXboxのゲームPadで操作できます。
-　・詳細はProjectProposalフォルダ内の数をとるか、速さをとるか.pdfを参照
+　・詳細はProjectProposalフォルダ内の数をとるか、早さをとるか.pdfを参照
 
 【クレジット】
   ・ miHoYo
