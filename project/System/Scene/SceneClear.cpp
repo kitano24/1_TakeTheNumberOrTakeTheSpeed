@@ -66,7 +66,7 @@ void SceneClear::Update()
 	}
 
 	count++;
-	if (count == 120) count = 0;
+	if (count == 240) count = 0;
 }
 
 //---------------------------------------------------------------------------
@@ -74,8 +74,9 @@ void SceneClear::Update()
 //---------------------------------------------------------------------------
 void SceneClear::Draw()
 {
-	int x = 0;
-	int y = 0;
+	int x = 0; //!< ”wŒi‚ÌXÀ•W
+	int y = 0; //!< ”wŒi‚ÌYÀ•W
+	//! ”wŒi‚Ì•`‰æ
 	DrawGraph(x, y, clearScreen, false);
 
 	DrawStringToHandle(550, 400, "Your score ", WHITE, fontSize);
@@ -83,8 +84,8 @@ void SceneClear::Draw()
 	sprintf_s(text, "%d", dispScore);
 	DrawStringToHandle(1090, 400, text, SKYBLUE, fontSize);
 
-	//! Bƒ{ƒ^ƒ“‚Å–ß‚é
-	if (count > 0 && count < 60 && isOpacity) {
+	//! Bƒ{ƒ^ƒ“‚Å–ß‚é‚ð“_–Å•\Ž¦
+	if (count > 0 && count < 180 && isOpacity) {
 		DrawStringToHandle(200, 900, "Push PadB or SPACE", WHITE, fontSize);
 	}
 }
