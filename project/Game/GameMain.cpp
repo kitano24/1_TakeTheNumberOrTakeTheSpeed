@@ -82,10 +82,8 @@ void GameMain::Update()
 		if (enemyManager != nullptr) {
 			enemyManager->Update();
 		}
-		
 		score->Update();
 		light->Update();
-
 		Hit();
 
 		//! @retval true ƒQ[ƒ€ƒNƒŠƒA
