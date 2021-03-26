@@ -7,7 +7,7 @@ class SceneClear : public Base
 {
 public:
 	SceneClear();
-	~SceneClear() = default;
+	~SceneClear();
 
 	void Initialize();
 	void Update();

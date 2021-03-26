@@ -41,7 +41,7 @@ void SceneTitle::Update()
 	Move();
 
 	//! ゲームスタートの位置
-	if (y1 == 570 && IsKeyOn(KEY_INPUT_SPACE) || y1 == 580 && IsPadOn(PAD_B)) {
+	if (y1 == 570 && IsKeyOn(KEY_INPUT_SPACE) || y1 == 570 && IsPadOn(PAD_B)) {
 		//! 決定のSE
 		PlaySoundFile("data/sound/decision.wav", DX_PLAYTYPE_BACK);
 		//! @retval true ゲームスタート
@@ -52,7 +52,7 @@ void SceneTitle::Update()
 	}
 
 	//! ランキングの位置
-	if (y1 == 770 && IsKeyOn(KEY_INPUT_SPACE) || y1 == 780 && IsPadOn(PAD_B)) {
+	if (y1 == 770 && IsKeyOn(KEY_INPUT_SPACE) || y1 == 770 && IsPadOn(PAD_B)) {
 		//! 決定のSE
 		PlaySoundFile("data/sound/decision.wav", DX_PLAYTYPE_BACK);
 		//! @retval true ランキングシーンへ移動

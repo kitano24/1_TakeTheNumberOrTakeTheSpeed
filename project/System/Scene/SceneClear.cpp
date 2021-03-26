@@ -12,6 +12,14 @@ SceneClear::SceneClear()
 }
 
 //---------------------------------------------------------------------------
+//! デストラクター
+//---------------------------------------------------------------------------
+SceneClear::~SceneClear()
+{
+
+}
+
+//---------------------------------------------------------------------------
 //! 初期化処理
 //---------------------------------------------------------------------------
 void SceneClear::Initialize()
@@ -66,9 +74,8 @@ void SceneClear::Update()
 //---------------------------------------------------------------------------
 void SceneClear::Draw()
 {
-	int x = 0; //!< 背景のX座標
-	int y = 0; //!< 背景のY座標
-	//! 背景の描画
+	int x = 0;
+	int y = 0;
 	DrawGraph(x, y, clearScreen, false);
 
 	DrawStringToHandle(550, 400, "Your score ", WHITE, fontSize);
@@ -76,7 +83,7 @@ void SceneClear::Draw()
 	sprintf_s(text, "%d", dispScore);
 	DrawStringToHandle(1090, 400, text, SKYBLUE, fontSize);
 
-	//! Bボタンで戻るを点滅表示
+	//! Bボタンで戻る
 	if (count > 0 && count < 180 && isOpacity) {
 		DrawStringToHandle(200, 900, "Push PadB or SPACE", WHITE, fontSize);
 	}

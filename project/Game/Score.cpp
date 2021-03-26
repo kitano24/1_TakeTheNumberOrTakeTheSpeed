@@ -33,9 +33,6 @@ void Score::Update()
 	//! 100秒以上になったら、20秒ごとにスコア-10000
 	if (count >= 6000 && count % 1200 == 0) score -= 10000;
 
-	//! スコアを0位かにならないようにする
-	if (score < 0) score = 0;
-
 	ImGui();
 }
 

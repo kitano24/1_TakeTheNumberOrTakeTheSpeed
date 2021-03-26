@@ -134,7 +134,7 @@ void SceneRanking::Draw()
 {
 	DrawRanKing();
 
-	//! 1位6の透明度が0になったら点滅して描画
+	//! 1位6の透明度が0になったら描画
 	if (count > 0 && count < 180 && firstOpacity > 255) {
 		//! Bボタンで戻るを描画
 		DrawStringToHandle(200, 950, "Back in PadB or SPACE", BLACK, fontSize);
@@ -151,7 +151,7 @@ void SceneRanking::SceneClearRank(SceneClear* sceneClear)
 
 	if (sceneClear->getIsOpacity()) sceneClearOpacity += 2;
 
-	//! ファイルから読み込んで描画
+	//ファイルから読み込んで描画
 	for (int i = 0, j = 1; i < ranking.size(), j <= ranking.size(); i++, j++) {
 
 		text = "No.";
@@ -170,10 +170,8 @@ void SceneRanking::SceneClearRank(SceneClear* sceneClear)
 //---------------------------------------------------------------------------
 void SceneRanking::DrawRanKing()
 {
-	int x = 0; //!< 背景のX座標
-	int y = 0; //!< 背景のY座標
-	//! 背景の描画
-	DrawGraph(x, y, rankingScreen, false);
+	//! 背景の画像
+	DrawGraph(0, 0, rankingScreen, false);
 
 	int rankTextX = 540; //!< 〓RANKING〓のX座標
 	int rankTextY = 70;  //!< 〓RANKING〓のY座標
